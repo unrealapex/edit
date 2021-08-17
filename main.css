@@ -1,0 +1,26 @@
+:root {
+    font-family: Consolas, monospace;
+  }
+  
+h1 {
+    text-align: center;
+}
+
+#stats {
+    text-align: right;
+    margin: 1rem;
+}
+
+textarea {
+    margin: 0 auto;
+    max-width: 100%;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+
+#container {
+    margin: auto;
+    width: 50%;
+}
+
