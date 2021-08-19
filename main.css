@@ -12,6 +12,11 @@ h1 {
     margin: 1rem;
 }
 
+#buttons {
+    text-align: center;
+    margin: 1rem;
+}
+
 textarea {
     margin: 0 auto;
     max-width: 100%;

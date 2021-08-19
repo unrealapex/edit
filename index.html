@@ -16,6 +16,28 @@
         <div id="words">Words: 0</div>
         <div id="characters">Characters: 0</div>
     </div>
+    <div id="buttons">
+        <button onclick='document.execCommand("undo")'>undo</button>
+        <button onclick='document.execCommand("redo")'>redo</button>
+        <button onclick='document.execCommand("copy")'>copy</button>
+        <button onclick='document.execCommand("cut")'>cut</button>
+        <button onclick='document.execCommand("paste")'>paste</button>
+        <button onclick='document.execCommand("delete")'>delete</button>
+        <!-- <button onclick='document.execCommand("increaseFontSize");'>+</button>
+        <input type="number" name="" id="fontSizeNumber">
+        <button onclick='document.execCommand("decreaseFontSize");'>-</button> -->
+        <!-- <button onclick='document.execCommand("bold");'>bold</button> -->
+        <!-- <button onclick='document.execCommand("italic");'>italic</button> -->
+        <!-- <button onclick='document.execCommand("underline");'>underline</button> -->
+        <!-- <button onclick='document.execCommand("removeFormat");'>remove formatting</button> -->
+        <!-- <button onclick='document.execCommand("indent");'>indent</button>
+        <button onclick='document.execCommand("outdent");'>outdent</button> -->
+        <!-- <button onclick='document.execCommand("justifyCenter");'>justifyCenter</button>
+        <button onclick='document.execCommand("justifyLeft");'>justifyLeft</button>
+        <button onclick='document.execCommand("justifyRight");'>justifyRight</button> -->
+        <button onclick='navigator.clipboard.writeText(document.querySelector("textarea").value)'>copy document</button>
+        <button onclick='document.querySelector("textarea").value = ""'>delete document</button>
+    </div>
     <div id="container">
         <textarea rows="10" cols="100" oninput='updateStats()' contenteditable="true" spellcheck="true" autofocus></textarea>
     </div>
