@@ -1,7 +1,8 @@
 :root {
-    font-family: Consolas, monospace;
-  }
-  
+    font-family: monospace;
+}
+
+
 h1 {
     text-align: center;
 }
@@ -14,8 +15,9 @@ h1 {
 textarea {
     margin: 0 auto;
     max-width: 100%;
+    letter-spacing: 0.5px;
     line-height: 1.5;
-    letter-spacing: 1px;
+    font-size: 12px;
 }
 
 
