@@ -1,33 +1,33 @@
-:root {
-    font-family: monospace;
-}
-
-
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #stats {
-    text-align: right;
-    margin: 1rem;
+  text-align: right;
+  margin: 1rem;
 }
 
 #buttons {
-    text-align: center;
-    margin: 1rem;
+  text-align: center;
+  margin: 1rem;
 }
 
-textarea {
-    margin: 0 auto;
-    max-width: 100%;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-    font-size: 12px;
+#input-area {
+  border: 3px solid #eaeaea;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-size: 12px;
+  overflow: auto;
+  width: auto;
+  height: auto;
+  min-width: 30rem;
+  min-height: 10rem;
+  display: table;
 }
-
 
 #container {
-    margin: auto;
-    width: 50%;
+  margin: auto;
+  width: 50%;
 }
-
