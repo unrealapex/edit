@@ -2,18 +2,14 @@
   text-align: center;
 }
 
-#stats {
+/* #stats {
   font-size: 0.7rem;
   text-align: right;
   margin: 1rem;
-}
+} */
 
-#buttons {
-  text-align: center;
-  margin: 1rem;
-}
 
-#input-area {
+#editor {
   border: 3px solid #eaeaea;
   border-radius: 0.2rem;
   margin: 0 auto;
