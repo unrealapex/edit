@@ -2,17 +2,18 @@
   text-align: center;
 }
 
-/* #stats {
-  font-size: 0.7rem;
+#stats {
+  font-size: 0.8rem;
   text-align: right;
   margin: 1rem;
-} */
+}
 
 
 #editor {
   border: 3px solid lightgray;
   border-radius: 0.2rem;
   margin: 0 auto;
+  margin: 4rem;
   letter-spacing: 0.5px;
   line-height: 1.5;
   font-size: 12px;

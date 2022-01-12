@@ -1,18 +1,13 @@
-// // checks if the document is filled only with whitespace
-// const whiteSpaceRE = /^\s{1,}$/;
+var editor = document.querySelector("#editor");
+var charCount = document.querySelector("#characters");
+var wordCount = document.querySelector("#words");
 
-// function updateStats() {
-//   // updates word and character count
-//   // copies the value of our textarea so any modifications we make don't affect it
-//   let inputValue = document.querySelector("editor").innerHTML;
-//   // if the document isn't blank and it isn't just filled with spaces, change the word and character count, else make both zero
-//   if (inputValue.length !== 0 && !whiteSpaceRE.test(inputValue)) {
-//       document.querySelector("#words").innerHTML =
-//         "Words: " + inputValue.split("/\s+/").length;
-//       document.querySelector("#characters").innerHTML =
-//         "Characters: " + inputValue.length;
-//     } else {
-//       document.querySelector("#words").innerHTML = "Words: 0";
-//       document.querySelector("#characters").innerHTML = "Characters: 0";
-//   }
-// }
+editor.addEventListener("input", function () {
+  if (editor.textContent.length != 0) {
+    wordCount.innerHTML = `Words: ${editor.textContent.split(/\s+/).length}`;
+    charCount.innerHTML = `Characters: ${editor.textContent.length}`;
+  } else {
+    wordCount.innerHTML = "Words: 0";
+    charCount.innerHTML = "Characters: 0";
+  }
+});
