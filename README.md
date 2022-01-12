@@ -1,2 +1,2 @@
-# format
-A powerful and minimalistic online text editor
+# 📝 indite 
+A simple text editor
