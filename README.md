@@ -1,2 +1,2 @@
-# 📝 indite 
+# 📝 edit 
 A simple text editor
