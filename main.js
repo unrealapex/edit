@@ -1,6 +1,7 @@
 var editor = document.querySelector("#editor");
 var charCount = document.querySelector("#characters");
 var wordCount = document.querySelector("#words");
+var downloadButton = document.querySelector("h1");
 // check if local storage is availible
 const hasLocalStorage = typeof Storage !== "undefined" ? true : false;
 
@@ -25,4 +26,27 @@ editor.addEventListener("input", function () {
     wordCount.innerHTML = "Words: 0";
     charCount.innerHTML = "Characters: 0";
   }
+});
+
+// download editor content
+function download(data, filename, type) {
+    var file = new Blob([data], {type: type});
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+        window.navigator.msSaveOrOpenBlob(file, filename);
+    else { // Others
+        var a = document.createElement("a"),
+                url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);  
+        }, 0); 
+    }
+}
+
+downloadButton.addEventListener("click", () => {
+  download(editor.textContent);
 });
