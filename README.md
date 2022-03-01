@@ -1,2 +1,2 @@
-# 📝 edit 
+# edit 
 A simple text editor
