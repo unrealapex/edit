@@ -29,3 +29,15 @@
   margin: auto;
   width: 50%;
 }
+
+#download {
+  cursor: pointer;
+}
+
+#download:hover #icon {
+  display: none;
+}
+
+#download:hover:before {
+  content: "💾";
+}

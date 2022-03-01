@@ -1,7 +1,7 @@
 var editor = document.querySelector("#editor");
 var charCount = document.querySelector("#characters");
 var wordCount = document.querySelector("#words");
-var downloadButton = document.querySelector("h1");
+var downloadButton = document.querySelector("#download");
 // check if local storage is availible
 const hasLocalStorage = typeof Storage !== "undefined" ? true : false;
 
